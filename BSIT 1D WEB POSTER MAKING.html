@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Inspirational Poster</title>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+        color: white;
+    }
+
+    .poster {
+        width: 90%;
+        max-width: 500px;
+        padding: 50px 30px;
+        border-radius: 20px;
+        background: rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(12px);
+        text-align: center;
+        box-shadow: 0 0 40px rgba(0,0,0,0.6);
+        animation: fadeIn 2s ease;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(40px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .cross {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+        animation: float 3s ease-in-out infinite;
+    }
+
+    @keyframes float {
+        0%,100% { transform: translateY(0); }
+        50% { transform: translateY(-8px); }
+    }
+
+    .quote {
+        font-size: 2rem;
+        font-weight: 600;
+        line-height: 1.4;
+        margin-bottom: 15px;
+        text-shadow: 0 0 10px rgba(0,255,255,0.6);
+    }
+
+    .subtext {
+        font-size: 1.2rem;
+        opacity: 0.8;
+        margin-bottom: 30px;
+    }
+
+    .author {
+        font-size: 1.4rem;
+        letter-spacing: 4px;
+        color: #ffd700;
+        font-weight: bold;
+        position: relative;
+    }
+
+    .author::before {
+        content: "— ";
+    }
+
+    .author::after {
+        content: "";
+        display: block;
+        width: 50px;
+        height: 2px;
+        background: #ffd700;
+        margin: 10px auto 0;
+        box-shadow: 0 0 10px #ffd700;
+    }
+
+</style>
+</head>
+
+<body>
+
+<div class="poster">
+    <div class="cross">🙏
+
+    <div class="quote">
+        Stay Positive
+    </div>
+
+    <div class="subtext">
+        Everyday is a brand new day
+    </div>
+
+    <div class="author">
+        CHRISTIAN
+    </div>
+</div>
+
+</body>
+</html>
